@@ -1,5 +1,6 @@
-#A Block Chain based Management System for Detecting Counterfeit Product in Supply 
-Chain
+#A Block Chain based Management System for Detecting Counterfeit Product in Supply Chain
+
+
 In recent years, Counterfeit goods play a vital role in product manufacturing industries. This 
 Phenomenon affects the sales and profit of the companies. To ensure the identification of real 
 products throughout the supply chain, a functional block chain technology used for 
