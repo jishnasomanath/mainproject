@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<fieldset>
+  <legend>ADD PRODUCT</legend>
+  <form id="form1" name="form1" method="post" action="">
+    <p>
+      <label for="P_NAME">PRODUCT NAME</label>
+      <span id="sprytextfield2">
+      <label for="productname"></label>
+      <input type="text" name="productname" id="pname" />
+    <span class="textfieldRequiredMsg">A value is required.</span></span></p>
+    <p>
+      <label for="P_NAME2">BRAND_NAME</label>
+      <span id="sprytextfield3">
+      <label for="bname"></label>
+      <input type="text" name="bname" id="bname" />
+    <span class="textfieldRequiredMsg">A value is required.</span></span></p>
+    <p>PRICE<span id="sprytextfield1">
+      <label for="text1"></label>
+      <input type="text" name="price" id="price" />
+    <span class="textfieldRequiredMsg">A value is required.</span></span></p>
+    <p>DESCRIPTION
+      <label for="description"></label>
+      <span id="sprytextarea1">
+      <label for="description"></label>
+      <textarea name="description" id="description" cols="45" rows="5"></textarea>
+    <span class="textareaRequiredMsg">A value is required.</span></span></p>
+    <p>
+      <input type="submit" name="submit" id="submit" value="Submit" />
+    </p>
+  </form>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</fieldset>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+</script>
+</body>
+</html>
