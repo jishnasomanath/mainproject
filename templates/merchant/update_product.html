@@ -11,44 +11,44 @@
 
 <body>
 <fieldset>
-  <legend>ADD PRODUCT</legend>
+  <legend>UPDATE PRODUCT</legend>
   <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
     <p>
       <label for="P_NAME">PRODUCT NAME</label>
       <span id="sprytextfield2">
       <label for="productname"></label>
-      <input type="text" name="productname" id="pname" />
+      <input type="text" name="productname" id="pname" value="{{ data['p_name']}}" />
     <span class="textfieldRequiredMsg">A value is required.</span></span></p>
     <p>
       <label for="P_NAME2">BRAND_NAME</label>
       <span id="sprytextfield3">
       <label for="bname"></label>
-      <input type="text" name="bname" id="brandname" />
+      <input type="text" name="bname" id="brandname" value="{{ data['Brand_name']}}" />
     <span class="textfieldRequiredMsg">A value is required.</span></span></p>
     <p>PRICE<span id="sprytextfield1">
       <label for="text1"></label>
-      <input type="text" name="price" id="price" />
+      <input type="text" name="price" id="price"  value="{{ data['price']}}" />
     <span class="textfieldRequiredMsg">A value is required.</span></span></p>
     <p>
       <label for="textfield">LOCATION</label>
-      <input type="text" name="location" id="textfield" />
+      <input type="text" name="location" id="textfield"  value="{{ data['p_location']}}"/>
     </p>
     <p>
       <label for="textarea">INGREDIENTS</label>
-      <textarea name="ingredients" id="textarea" cols="45" rows="5"></textarea>
+      <textarea name="ingredients" id="textarea" cols="45" rows="5">{{ data['ingredients']}}</textarea>
     </p>
     <p>USAGEDETAILS
       <label for="description"></label>
       <span id="sprytextarea1">
       <label for="usagedetails"></label>
-      <textarea name="description" id="description" cols="45" rows="5"></textarea>
+      <textarea name="description" id="description"cols="45" rows="5">{{ data['description']}}</textarea>
     <span class="textareaRequiredMsg">A value is required.</span></span></p>
     <p>
       <label for="photo">PHOTO</label>
-      <input type="file" name="photo" id="photo" />
+      <img src="{{ data['p_photo']}}"height="100" width="100"><input type="file" name="photo" id="photo" />
     </p>
     <p>
-      <input type="submit" name="submit" id="submit" value="Submit" />
+      <input type="submit" name="update" id="submit" value="update" />
     </p>
   </form>
   <p>&nbsp;</p>

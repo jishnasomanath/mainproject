@@ -3,7 +3,7 @@ import mysql.connector
 
 class Db:
     def __init__(self):
-        self.cnx = mysql.connector.connect(host="localhost",user="root",password="",database="blockhain")
+        self.cnx = mysql.connector.connect(host="localhost",user="root",password="",database="blockchain")
         self.cur = self.cnx.cursor(dictionary=True,buffered=True)
 
 
